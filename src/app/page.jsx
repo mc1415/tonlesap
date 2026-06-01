@@ -287,7 +287,7 @@ export default function Home() {
               <p className="mt-5 max-w-3xl text-xl font-semibold text-cyan-50 drop-shadow sm:text-2xl">
                 How It Affects People's Jobs, Money, and Communities in Cambodia
               </p>
-              <p className="mt-5 max-w-2xl text-base leading-7 text-cyan-50/82 drop-shadow sm:text-lg">
+              <p className="mt-5 max-w-2xl text-base leading-7 text-white drop-shadow sm:text-lg">
                 "Thousands of Cambodian families depend on Tonle Sap for food and income. But illegal fishing is threatening both livelihoods and the future of the lake."
               </p>
             </motion.div>
@@ -441,8 +441,8 @@ export default function Home() {
         </div>
         <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {solutions.map(([title, Icon]) => (
-            <motion.div key={title} layout className={`rounded-lg border p-6 transition-colors ${solutionMode ? "border-reed/40 bg-reed/12" : "border-red-400/25 bg-red-950/25"}`}>
-              <Icon className={solutionMode ? "text-reed" : "text-orange-300"} size={34} />
+            <motion.div key={title} layout className={`rounded-lg border p-6 transition-colors ${solutionMode ? "border-reed/40 bg-reed/12" : "border-cyan-200/20 bg-white/[0.07] hover:border-cyan-300/45 hover:bg-white/[0.11]"}`}>
+              <Icon className={solutionMode ? "text-reed" : "text-lake-500"} size={34} />
               <h3 className="mt-5 text-xl font-semibold text-white">{title}</h3>
               <p className="mt-3 text-sm leading-6 text-cyan-50/72">
                 {solutionMode ? "A practical step toward stronger communities, healthier fish stocks, and more stable income." : "Without action, this pressure continues to weaken livelihoods and the lake."}
@@ -486,7 +486,7 @@ export default function Home() {
             <p className="font-serif text-4xl font-semibold leading-tight text-white sm:text-6xl">
               "Protecting Tonle Sap means protecting the people who depend on it."
             </p>
-            <p className="mt-6 text-2xl text-cyan-50/82">"The future of the lake depends on the choices we make today."</p>
+            <p className="mt-6 text-2xl text-white">"The future of the lake depends on the choices we make today."</p>
             <div className="mt-10 border-t border-cyan-200/20 pt-6 text-sm uppercase tracking-[0.2em] text-cyan-50/70">
               <p>Created by Hoklay Ho</p>
               <p className="mt-2">Grade 12 Capstone Project</p>
